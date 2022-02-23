@@ -51,6 +51,5 @@ movieDB.movies.forEach((film, i) => {
 
 
 
-console.log(poster.innerHTML);
 
 

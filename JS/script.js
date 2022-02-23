@@ -78,7 +78,7 @@ const personalMovieDB = {
 
 const {writeYourGenres} = personalMovieDB;
 
-writeYourGenres();
+// writeYourGenres();
 
 // genres.forEach(function(item,index) {
 //     console.log(`Любимый жанр #${index+1} - это ${item} `);
@@ -87,6 +87,38 @@ writeYourGenres();
 personalMovieDB.genres.forEach((item, i) => {
     console.log(`Любимый жанр #${i+1} - это ${item} `);
 });
+
+// тренеровка
+
+const btms = document.querySelectorAll('button')
+
+
+let i = 0
+const deliteElement = function (event) {
+    console.log(event.target)
+    i++
+    // if (i==2) {
+    //     btm.removeEventListener('click', deliteElement);
+    // }
+}
+// btm.addEventListener('click', deliteElement);
+
+const link = document.querySelector('a');
+
+link.addEventListener('click', (event)=>{
+    event.preventDefault();
+    console.log(event.currentTarget)
+});
+
+btms.forEach(btm => {
+    btm.addEventListener('click',deliteElement)
+});
+
+
+
+
+
+
 
 
 
