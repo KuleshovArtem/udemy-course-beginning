@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(255, 255, 224);
+}
+h1 {
+    color: rgb(204,0,0);
+    text-align: center;
+}
+span {
+    font-style: italic;
+}
