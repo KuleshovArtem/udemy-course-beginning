@@ -1,21 +1,21 @@
-// function pow (x, n) {
-//     let result = 1;
-//      for (let i = 0; i < n; i ++) {
-//         result *= x;
-//      }
+function pow (x, n) {
+    let result = 1;
+     for (let i = 0; i < n; i ++) {
+        result *= x;
+     }
 
-//      return result;
-// }
+     return result;
+}
 
-// function pow (x, n) {
-//     if (n === 1) {
-//         return x;
-//     } else {
-//         return x * pow (x, n - 1);
-//     }
-// }
+function pow (x, n) {
+    if (n === 1) {
+        return x;
+    } else {
+        return x * pow (x, n - 1);
+    }
+}
 
-// console.log(pow(2, 4));
+console.log(pow(2, 4));
 
 let student = {
     js: [{
@@ -45,34 +45,34 @@ let student = {
                 name: 'Test',
                 progress: 100,
             }]
-        }
+        },
     }
 };
 
-// function getTotalProgressByIteration(data) {
-//     let total = 0;
-//     let students = 0;
+function getTotalProgressByIteration(data) {
+    let total = 0;
+    let students = 0;
 
-//     for (let course of Object.values(data)) {
-//         if (Array.isArray(course)) {
-//             students += course.length;
+    for (let course of Object.values(data)) {
+        if (Array.isArray(course)) {
+            students += course.length;
             
-//             for (let i = 0; i < course.length; i++) {
-//                 total += course[i].progress;
-//             }
-//         } else {
-//             for (let subCourse of Object.values(course)) {
-//                 students += subCourse.length;
+            for (let i = 0; i < course.length; i++) {
+                total += course[i].progress;
+            }
+        } else {
+            for (let subCourse of Object.values(course)) {
+                students += subCourse.length;
 
-//                 for (let i = 0; i < subCourse.length; i++) {
-//                     total += subCourse[i].progress;
-//                 }
-//             }
-//         }
-//     }
+                for (let i = 0; i < subCourse.length; i++) {
+                    total += subCourse[i].progress;
+                }
+            }
+        }
+    }
 
-//     return total / students;
-// }
+    return total / students;
+}
 
 // console.log(getTotalProgressByIteration(student));
 
