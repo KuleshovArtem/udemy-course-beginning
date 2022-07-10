@@ -101,3 +101,31 @@ function getTotalProgressByRecusrsion(data) {
 
 const result = getTotalProgressByRecusrsion(student);
 console.log(result[0] / result[1]);
+
+
+//                                  функция которая высчитывет факториал
+
+function factorial(number) {
+    if(typeof(number) !== 'number' || number%1 !== 0) { 
+
+        return 'дробное или не число';
+    } else if(number <= 0) {
+
+        return 1;
+
+    }
+
+    if (number === 1) {
+        const result = number;
+
+        return result;
+    } else {
+        const result = number * factorial(number -1);
+
+        return result;
+    }
+    
+}
+
+const resultFactorial= factorial(1.2);
+console.log(resultFactorial);
