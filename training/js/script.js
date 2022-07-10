@@ -112,20 +112,18 @@ function factorial(number) {
     } else if(number <= 0) {
 
         return 1;
-
     }
 
     if (number === 1) {
-        const result = number;
 
-        return result;
+        return number;
     } else {
-        const result = number * factorial(number -1);
+        number *= factorial(number -1);
 
-        return result;
+        return number;
     }
     
 }
 
-const resultFactorial= factorial(1.2);
+const resultFactorial= factorial(5);
 console.log(resultFactorial);
